@@ -76,6 +76,6 @@ defineEmits<{
 }>()
 
 const isActive = computed(() => props.activeView === props.item.id)
-const hasChildren = computed(() => props.item.children?.length > 0)
+const hasChildren = computed(() => props.item.children?.length && props.item.children?.length > 0)
 const isExpanded = computed(() => props.expandedItems.includes(props.item.id))
 </script>
