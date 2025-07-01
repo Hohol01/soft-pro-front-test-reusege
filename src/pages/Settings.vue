@@ -77,6 +77,18 @@ const getSectionTitle = () => {
 
 const currentViewComponent = computed(() => {
   switch (props.activeSection) {
+    case 'general':
+      return '';
+    case 'users-settings':
+      return '';
+    case 'security':
+      return '';
+    case 'api-keys':
+      return '';
+    case 'appearance':
+      return '';
+    case 'localization':
+      return '';
     default:
       return SettingsOverview;
   }

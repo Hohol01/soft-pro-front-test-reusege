@@ -313,7 +313,7 @@ import {
   FileStack,
   File,
   Lock,
-  FileImage
+  FileImage, BadgePlusIcon
 } from "lucide-vue-next";
 import {type Component, computed, ref} from "vue";
 import type {MenuItemType} from "@/types/menu-item-type.ts";
@@ -361,6 +361,7 @@ const mainMenuItems: MenuItemType[] = [
   {id: 'media', label: 'Media', icon: Image, href: '/media'},
   {id: 'permissions', label: 'Permissions', icon: Lock, href: '/permissions'},
   {id: 'settings', label: 'Settings', icon: Settings, href: '/settings'},
+  {id: 'select', label: 'select new', icon: BadgePlusIcon, href: '/select'},
 ];
 
 

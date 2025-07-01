@@ -18,6 +18,8 @@ import Sidebar from "@/components/Sidebar.vue";
 import Collections from "@/pages/Collections.vue";
 import {computed, ref, h} from "vue";
 import Settings from "@/pages/Settings.vue";
+import Select from "@/components/ui/select/Select.vue";
+import SelectPage from "@/pages/SelectPage.vue";
 
 const activeView = ref('collections');
 
@@ -41,6 +43,8 @@ const currentViewComponent = computed(() => {
       return 'Media';
     case 'permissions':
       return 'Permissions';
+    case 'select':
+      return SelectPage
     case 'settings':
     case 'general':
     case 'users-settings':
